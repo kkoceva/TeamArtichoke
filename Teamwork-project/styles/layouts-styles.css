@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'magicFont';
+    src:url('../fonts/MagicSchoolTwo.ttf') format('truetype');
+}
+
+* {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+body {
+    /*margin:0 auto;*/
+    background-color:#3f4c6b;
+}
+
+div#wrapper {
+    background-color:darkgrey;
+    height: 100%;
+    margin-left:10%;
+    margin-right:10%
+
+}
+
+div#wrapper>header {
+    background:url('../images/bookBlue.jpg') no-repeat;
+    background-size: 120%;
+    color:grey;
+    /*text-align:center;*/
+}
+#header-wrapper {
+    display:inline-block;
+}
+
+#header-wrapper>h1 {
+    font-size: 3em;
+    float:left;
+    font-family:'magicFont';
+}
+
+nav {
+    display:inline-block;
+    margin-top:5%;
+}
+nav ul li {
+    /*display:inline-block;*/
+    float:left;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:grey;
+    border:1px solid grey;
+    background-color:#0b488b;
+    padding-left:1em;
+    padding-right:1em;
+    width:20%;
+    margin:1em;
+    border-radius:10px;
+}
+
+div#wrapper>footer {
+    background-color: black;
+    color:white;
+}
+
+
+
