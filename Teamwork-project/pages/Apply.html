@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Apply</title>
+    <link rel="stylesheet" href="../css/layouts-styles.css"/>
+    <link rel="stylesheet" href="../css/apply-styles.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img src="../images/logo.jpg" width="150">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="../Index.html">Начало</a></li>
+                <li><a href="News.html">Новини</a>
+                    <ul class="submenu">
+                        <li><a href="FromWorld.html">От света</a></li>
+                        <li><a href="FromBulgaria.html">От България</a></li>
+                        <li><a href="FromUniversity.html">От университета</a></li>
+                    </ul>
+                </li>
+                <li><a href="HistoryOfProgramming.html">История</a>
+                    <ul class="submenu">
+                        <li><a href="#">На програмирането</a></li>
+                        <li><a href="#">На университета</a></li>
+                        <li><a href="#">Последни събития</a></li>
+                    </ul>
+                </li>
+                <li><a href="Trainers.html">Преподаватели</a>
+                    <ul class="submenu">
+                        <li><a href="#">Галерия</a></li>
+                        <li><a href="#">Биография</a></li>
+                    </ul>
+                </li>
+                <li><a href="Courses.html">Курсове</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ниво -0-</a></li>
+                        <li><a href="#">Ниво -1-</a></li>
+                        <li><a href="#">Ниво -2-</a></li>
+                        <li><a href="#">Ниво -3-</a></li>
+                    </ul>
+                </li>
+                <li><a href="Fun.html">Забавления</a>
+                    <ul class="submenu">
+                        <li><a href="#">Видеа</a></li>
+                        <li><a href="#">Вицове</a></li>
+                        <li><a href="#">Снимки</a></li>
+                        <li><a href="#">Факти</a></li>
+                    </ul>
+                </li>
+                <li><a href="Apply.html">Кандидатствай</a></li>
+                <li><a href="AboutUs.html">За нас</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <header><h1>Кандидатствай</h1></header>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>За Ниво 0 (Ученик)</legend>
+                   <p> <label for="name">Как са те кръстили вашите:</label></p>
+                    <p class="input-text"><input type="text" name="name" id="name"/></p>
+                    <p><label for="nick-name">Как ти викат в махалата:</label></p>
+                    <p class="input-text"><input type="text" name="nick-name" id="nick-name"/></p>
+                   <p> <label for="name-love">Как ти вика гаджето (Мечо и Мацко не се приемат)</label>
+                    <input type="text" name="name-love" id="name-love"/></p>
+                    <p><input type="password"/></p>
+                    <p><input type="password"/></p>
+                   <p> <input type="email"/></p>
+                    <label for="race-star-craft">Коя ти е любимата раса?</label>
+                    <select name="race-star-craft" id="race-star-craft">
+                        <option value="zerg">Zerg</option>
+                        <option value="protos">Protos</option>
+                        <option value="teran">Teran</option>
+                        <option value="do-not-know">Не знам за какво ми говориш</option>
+                        <option value="dota-forever">Аз играя Dota</option>
+                    </select>
+                    <p><label for="sex">Пол</label>
+                    <select name="sex" id="sex">
+                        <option value="male">Мъж</option>
+                        <option value="female">Жена</option>
+                        <option value="other">Нещо друго</option>
+                    </select>
+                    </p>
+                   <p><input type="reset"/><input type="submit"/></p>
+                </fieldset>
+                <fieldset>
+                    <legend>За Ниво 1 (Чирак)</legend>
+                    <label for="feel">Как се чувстваш?</label>
+                    <select name="feel" id="feel">
+                        <option value="bad">Лошо ми е</option>
+                        <option value="headache">Боли ме главата</option>
+                        <option value="ok">Да кажем, че съм добре</option>
+                        <option value="without-money">Нямам пари</option>
+                        <option value="tooth">Боли ме зъб</option>
+                        <option value="homework">Имам да пиша домашно по HTML</option>
+                    </select>
+                   <p> <label for="second-name">По същия начин ли ти викат</label>
+                    <input type="text" name="second-name" id="second-name"/></p>
+                    <label for="sound-of-voice">А ти как им викаш?</label>
+                    <select name="sound-of-voice" id="sound-of-voice">
+                        <option value="loud">Силно</option>
+                        <option value="loud">Тихо</option>
+                        <option value="very-loud">Крещя си</option>
+                        <option value="very-loud">Ами те ми викат, аз си мълча</option>
+                    </select>
+                    <p><input type="reset"/><input type="submit" onclick="alert('Трябва първо да минеш Ниво 0 (Ученик)')"/></p>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>За Ниво 2 (Калфа)</legend>
+                    <p><input type="reset"/><input type="submit" onclick="alert('Трябва първо да минеш Ниво 1 (Чирак)')"/></p>
+                </fieldset>
+                <fieldset>
+                    <legend>За Ниво 3 (Заместник на шефа)</legend>
+                    <p><input type="reset"/><input type="submit" onclick="alert('Трябва първо да минеш Ниво 2 (Калфа)')"/></p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy Team "ARTICHOKE"</p>
+    </footer>
+</div>
+</body>
+</html>

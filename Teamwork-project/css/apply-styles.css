@@ -1,0 +1,43 @@
+fieldset {
+    display:inline-block;
+    width:500px;
+    height:800px;
+    float:left;
+    padding:20px 5px 10px 30px;
+    box-sizing: border-box;
+    margin-left:100px;
+    margin-bottom:20px;
+    border: 3px ridge #0415fd;
+    border-radius:20px;
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+legend {
+    text-align: center;
+    color: #f7b84f;
+    font-size:2em;
+    font-weight:bold;
+    text-shadow: 10px 5px 20px #0415fd;
+    padding-top:15px;
+}
+
+form::after {
+    display: block;
+    content:"";
+    zoom:1;
+    clear:both;
+}
+
+label {
+    text-align:left;
+    /*font-size:1em;*/
+    color: #f7b84f;
+    text-shadow: 10px 5px 5px #373737;
+    font-size:1.5em;
+    /*position:relative;*/
+}
+
+.input-text>input {
+    height:30px;
+    width:400px;
+}
