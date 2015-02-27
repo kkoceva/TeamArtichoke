@@ -9,17 +9,26 @@ h2{
 h3{
 	text-align: center;
 }
-p{
-
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif; 
 }
-img{
+.imag{
 	float: left;
 	padding-right: 50px;
 	padding-left: 15px;
+}
+.imag:after {
+   content: ""; 
+   display: block; 
+   clear: both; 
+   height: 0; 
 }
 #text:after {
    content: ""; 
    display: block; 
    clear: both; 
    height: 0; 
+}
+#main{
+	background-image: url(../images/papir.gif);
 }
