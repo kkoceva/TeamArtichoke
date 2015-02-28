@@ -1,15 +1,14 @@
 fieldset {
-    display:inline-block;
-    width:500px;
-    height:800px;
-    float:left;
+    /*display:inline-block;*/
+    width:800px;
+    /*height:auto;*/
     padding:20px 5px 10px 30px;
     box-sizing: border-box;
     margin-left:100px;
-    margin-bottom:20px;
-    border: 3px ridge #0415fd;
+    /*margin-bottom:20px;*/
+    border: 3px ridge #c79440;
     border-radius:20px;
-    background-color: rgba(55, 55, 55, 0.5);
+    background-color: rgb(55, 55, 55);
 }
 
 legend {
@@ -17,27 +16,31 @@ legend {
     color: #f7b84f;
     font-size:2em;
     font-weight:bold;
-    text-shadow: 10px 5px 20px #0415fd;
-    padding-top:15px;
+    text-shadow: 10px 10px 20px #373737;
+    padding-top:15px
+
 }
 
-form::after {
-    display: block;
-    content:"";
-    zoom:1;
-    clear:both;
-}
 
 label {
     text-align:left;
     /*font-size:1em;*/
     color: #f7b84f;
-    text-shadow: 10px 5px 5px #373737;
+    text-shadow: 10px 5px 15px #373737;
     font-size:1.5em;
     /*position:relative;*/
 }
+input[type="file"] {
+    display: none;
+    /*content:"Качи файл";*/
+}
+
+input[type="file"]+span{
+    border:1px solid #0415fd;
+    background: #f7b84f;
+}
 
 .input-text>input {
-    height:30px;
+    height:40px;
     width:400px;
 }
