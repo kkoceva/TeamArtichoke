@@ -1,8 +1,28 @@
-main header h1 {
+body {
     font-family: Arial, sans-serif;
+
+}
+main header h1 {
     color: burlywood;
+    padding-bottom: 1.4rem;
 }
-main>section>img {
+p {
+    text-indent: 20px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+main>section>ul {
+    padding: 2rem;
+
+}
+    main>section>ul>li {
+        padding: 0.4rem;
+        font-size: 1.7rem;
+        color: darkslategrey;
+    }
+.educ-gif {
     width: 400px;
-    height: 300px;
+    margin: 5px auto;
 }
+
