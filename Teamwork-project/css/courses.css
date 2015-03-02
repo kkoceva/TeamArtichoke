@@ -4,7 +4,8 @@ body {
 }
 main header h1 {
     color: burlywood;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
 }
 p {
     text-indent: 20px;
