@@ -1,0 +1,17 @@
+section#gallery-section {
+    display:inline-block;
+    psdding:30px;
+}
+
+div.gallery-images {
+    float:left;
+    margin-left:20px;
+
+}
+
+div.gallery-images>img{
+    width:400px;
+    height:300px;
+}
+
+

@@ -58,16 +58,19 @@
     <main>
         <header><h1>Кандидатствай</h1></header>
         <section>
-            <form action="">
+            <form action="get">
                 <fieldset>
                     <legend>За Ниво 0 (Ученик)</legend>
+                    <div class="labels-input">
+                        <div class="labels"><label for="picture">Снимка на твоята OS:</label></div>
 
-                        <div><label for="picture">Снимка на твоята OS:</label></div>
-
-                        <div><input type="file" id="picture" name="picture" placeholder="качи"/><span>Избери файл</span></div>
-
-                    <div>
-                        <div>
+                        <div class="upload">
+                            <span>Избери файл</span>
+                            <div id="button-upload"><input type="file" id="picture" name="picture" class="upload-input" placeholder="качи"/></div>
+                        </div>
+                    </div>
+                    <div class="labels-input">
+                        <div class="labels">
                             <label for="name">Как са те кръстили вашите:</label>
                         </div>
                         <div class="input-text">
@@ -75,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="labels">
                         <label for="nick-name">Как ти викат в махалата:</label>
                     </div>
 
@@ -83,29 +86,29 @@
                         <input type="text" name="nick-name" id="nick-name"/>
                     </div>
 
-                    <div>
-                        <label for="name-love">Как ти вика гаджето:</label>
+                    <div class="labels">
+                        <label for="name-love">Как ти вика приятелят/приятелката ти:</label>
                     </div>
 
                     <div class="input-text">
                         <input type="text" name="name-love" id="name-love"/>
                     </div>
 
-                    <div>
+                    <div class="labels">
                         <label for="nick-name">Парола:</label>
                     </div>
 
                     <div class="input-text">
                         <input type="password" name="password" id="password"/>
                     </div>
-                    <div>
+                    <div class="labels">
                         <label for="number-shoes">Номер на обувките:</label>
                     </div>
 
                     <div class="input-text">
                         <input type="number" name="number-shoes" id="number-shoes"/>
                     </div>
-                    <div>
+                    <div class="labels">
                         <label for="color">Любим цвят:</label>
                     </div>
 
@@ -113,19 +116,23 @@
                         <input type="color" name="color" id="color" value="#f7b84f"/>
                     </div>
 
-                    <label for="race-star-craft">Предпочитана раса:</label>
+                    <div class="labels"><label for="race-star-craft">Предпочитана раса:</label></div>
                     <select name="race-star-craft" id="race-star-craft">
-                        <option value="race"></option>
                         <option value="zerg">Zerg</option>
-                        <option value="protos">Protos</option>
-                        <option value="teran">Teran</option>
+                        <option value="protos">Protoss</option>
+                        <option value="teran">Terran</option>
                         <option value="do-not-know">Нямам идея какво е това</option>
                         <option value="dota-forever">Аз играя Dota</option>
                     </select>
 
                     <div class="input-text">
-                        <div><p>Пол</p></div>
-                        <div><input type="radio" id="male"/></div>
+                        <div class="labels"><label for="sex">Пол:</label></div>
+                        <div><select name="sex" id="sex">
+                            <option value="choose">Избери си пол</option>
+                            <option value="male">Мъж</option>
+                            <option value="female">Жена</option>
+                            <option value="other">Нещо друго</option>
+                        </select></div>
                     </div>
                     <div><input type="reset"/><input type="submit" value="Кандидатствай за Ниво 0"
                                                      onclick="alert('Опитай пак!')"/>
@@ -133,8 +140,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>За Ниво 1 (Чирак)</legend>
-                    <siv><label for="feel">Как се чувстваш?</label></siv>
-                    <select name="feel" id="feel">
+                    <div><label for="feel">Как се чувстваш?</label></div>
+                    <div><select name="feel" id="feel">
                         <option value="bad">Лошо ми е</option>
                         <option value="headache">Боли ме главата</option>
                         <option value="ok">Да кажем, че съм добре</option>
@@ -142,6 +149,7 @@
                         <option value="tooth">Боли ме зъб</option>
                         <option value="homework">Имам да пиша домашно по HTML</option>
                     </select>
+                    </div>
 
 
                     <div><label for="homework-upload">Колко домашни си качил?</label></div>
@@ -173,8 +181,6 @@
                     </div>
                     <div><input type="reset"/><input type="submit" value="Кандидатствай за Ниво 2"
                                                      onclick="alert('Трябва първо да минеш Ниво 1 (Чирак)')"/></div>
-                    <!--<div><label for="">Свободното си време</label></div>-->
-
                 </fieldset>
                 <fieldset>
                     <legend>За Ниво 3 (Заместник на шефа)</legend>
@@ -192,8 +198,6 @@
                         <option value="no-alcohol">Не пия алкохол</option>
                     </select>
                     </div>
-
-
                     <div><input type="reset"/><input type="submit" value="Кандидатствай за Ниво 3"
                                                      onclick="alert('Трябва първо да минеш Ниво 2 (Калфа)')"/></div>
                 </fieldset>

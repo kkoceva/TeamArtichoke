@@ -1,46 +1,74 @@
 fieldset {
-    /*display:inline-block;*/
-    width:800px;
-    /*height:auto;*/
-    padding:20px 5px 10px 30px;
+    width: 600px;
+    padding: 20px 5px 10px 30px;
     box-sizing: border-box;
-    margin-left:100px;
-    /*margin-bottom:20px;*/
+    margin-left: 100px;
     border: 3px ridge #c79440;
-    border-radius:20px;
+    border-radius: 20px;
     background-color: rgb(55, 55, 55);
 }
 
 legend {
     text-align: center;
     color: #f7b84f;
-    font-size:2em;
-    font-weight:bold;
+    font-size: 2em;
+    font-weight: bold;
     text-shadow: 10px 10px 20px #373737;
-    padding-top:15px
+    padding-top: 15px
 
 }
 
-
 label {
-    text-align:left;
+    text-align: left;
     /*font-size:1em;*/
     color: #f7b84f;
     text-shadow: 10px 5px 15px #373737;
-    font-size:1.5em;
-    /*position:relative;*/
-}
-input[type="file"] {
-    display: none;
-    /*content:"Качи файл";*/
+    font-size: 1.5em;
 }
 
-input[type="file"]+span{
-    border:1px solid #0415fd;
+input, select {
+    border-radius: 10px;
+}
+
+input, select {
+    height: 40px;
+    width: 400px;
+}
+
+input[type='submit'], input[type='reset'] {
+    background-color: #f7b84f;
+    border: none;
+    color: #373737;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.upload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.upload input.upload-input {
+    float: left;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.upload > span {
+    float: left;
+    color:#f7b84f;
+}
+
+#button-upload {
+    border: 1px solid #0415fd;
     background: #f7b84f;
-}
-
-.input-text>input {
-    height:40px;
-    width:400px;
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius:5px;
 }
