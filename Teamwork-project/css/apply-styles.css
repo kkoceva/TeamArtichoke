@@ -20,7 +20,6 @@ legend {
 
 label {
     text-align: left;
-    /*font-size:1em;*/
     color: #f7b84f;
     text-shadow: 10px 5px 15px #373737;
     font-size: 1.5em;
@@ -72,3 +71,35 @@ input[type='submit'], input[type='reset'] {
     display: inline-block;
     border-radius:5px;
 }
+
+@media screen and ( max-width:1600px) and (min-width:1024px) {
+
+    main {
+       width:100%;
+    }
+    fieldset {
+        width:80%;
+    }
+}
+/*@media screen and ( max-width:1024px) and (min-width:960px) {*/
+    /*fieldset {*/
+        /*width:40%;*/
+    /*}*/
+/*}*/
+/*@media screen and ( max-width:960px) and (min-width:768px) {*/
+
+    /*fieldset {*/
+        /*width:30%;*/
+    /*}*/
+/*}*/
+/*@media screen and ( max-width:768px) and (min-width:640px) {*/
+    /*fieldset {*/
+        /*width:40%;*/
+    /*}*/
+/*}*/
+
+/*@media screen and ( max-width:640px) and (min-width:480px) {*/
+    /*fieldset {*/
+        /*width:40%;*/
+    /*}*/
+/*}*/
