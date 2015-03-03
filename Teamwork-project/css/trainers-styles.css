@@ -1,0 +1,25 @@
+section>article {
+    background-color: #373737;
+    color:#f7b84f;
+    text-align:justify;
+    width:80%;
+    margin-left:10%;
+    margin-top:2%;
+    border:1px solid #f7b84f;
+    border-radius:10px;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.trainers {
+    width:200px;
+    height:240px;
+    float:left;
+}
+
+article:after {
+    display: block;
+    content:"";
+    zoom:1;
+    clear:both;
+}
