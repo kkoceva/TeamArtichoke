@@ -1,0 +1,26 @@
+section>article{
+    background:none;
+}
+section>article>figure{
+    border: 1px solid black;
+    margin: 10px 10px 10px 20px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+}
+.inner{
+
+    background-color: white;
+    width: 97%;
+    height: 300px;
+}
+.inner>figure>div>span{
+    background-color: #ff353d;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 1px 3px 1px 3px;
+}
+.lead-article{
+    width: 58%;
+    height: 250px;
+    vertical-align: top;
+}
