@@ -27,9 +27,10 @@
                     <li><a href="#">Последни събития</a></li>
                 </ul>
             </li>
-            <li><a href="Trainers.html">Преподаватели</a>
+            <li><a href="#">Преподаватели</a>
                 <ul class="submenu">
                     <li><a href="Gallery.html">Галерия</a></li>
+                    <li><a href="Trainers.html">Биография</a></li>
                 </ul>
             </li>
             <li><a href="Courses.html">Курсове</a>
@@ -54,13 +55,30 @@
     </div>
 </header>
 <main>
+    <header><h1>Галерия</h1></header>
     <section id="gallery-section">
-        <div class="gallery-images"><img src="../images/nakov-wizard.png" alt=""/></div>
-        <div class="gallery-images"><img src="../images/don-bankin-riding.png" alt=""/></div>
-        <div class="gallery-images"><img src="../images/Aleks-and-her-pets.png" alt=""/></div>
-        <div class="gallery-images"><img src="" alt=""/></div>
+        <article id="gallery-header" class="img-gallery"><img src="../images/nakov-wizard.png" alt="Nakov"/></article>
+       <article id="gallery">
+        <ul id="gallery-main">
+            <li class="gallery-images img-gallery"><a href="#bankin"><img src="../images/don-bankin-riding.png" alt="Bankin" id="bankin"/></a></li>
+            <li class="gallery-images img-gallery"><a href="#aleks"><img src="../images/Aleks-and-her-pets.png" alt="Aleks" id="aleks"/></a></li>
+            <li class="gallery-images img-gallery"><a href="#angel"><img src="../images/robin-hood-scene.png" alt="Angel" id="angel"/></a></li>
+            <li class="gallery-images img-gallery"><a href="#bogomil"><img src="../images/arthur-scene.png" alt="Bogomil" id="bogomil"/></a></li>
+        </ul>
+       </article>
     </section>
 </main>
+    <footer>
+        <section id="footer-left">
+            <img src="images/artichoke.png" width="180">
+        </section>
+        <section id="footer-right">
+            <div id="fb"></div>
+            <div id="googleplus"></div>
+            <div id="twitter"></div>
+        </section>
+
+    </footer>
 </div>
 </body>
 </html>

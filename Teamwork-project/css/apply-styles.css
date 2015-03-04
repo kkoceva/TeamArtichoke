@@ -1,74 +1,196 @@
-fieldset {
-    width: 600px;
-    padding: 20px 5px 10px 30px;
-    box-sizing: border-box;
-    margin-left: 100px;
-    border: 3px ridge #c79440;
-    border-radius: 20px;
+form {
+    width: 80%;
     background-color: rgb(55, 55, 55);
-}
-
-legend {
-    text-align: center;
     color: #f7b84f;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 10px 10px 20px #373737;
-    padding-top: 15px
-
-}
-
-label {
-    text-align: left;
-    /*font-size:1em;*/
-    color: #f7b84f;
-    text-shadow: 10px 5px 15px #373737;
-    font-size: 1.5em;
-}
-
-input, select {
+    font-size: 1.2em;
+    margin-left: 5%;
+    border: 1px ridge #d39d43;
     border-radius: 10px;
-}
-
-input, select {
-    height: 40px;
-    width: 400px;
-}
-
-input[type='submit'], input[type='reset'] {
-    background-color: #f7b84f;
-    border: none;
-    color: #373737;
-    width: 200px;
-    height: 30px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.upload {
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.upload input.upload-input {
-    float: left;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.upload > span {
-    float: left;
-    color:#f7b84f;
-}
-
-#button-upload {
-    border: 1px solid #0415fd;
-    background: #f7b84f;
-    width: 100px;
-    height: 20px;
-    margin-left: 10px;
     display: inline-block;
-    border-radius:5px;
+    padding-left: 3%;
 }
+
+fieldset {
+    width: 40%;
+    border: none;
+    float: left;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+form div#important-fields {
+    font-size: 0.7em;
+
+}
+
+fieldset#important-info{
+    border-right:1px solid rgba(211, 157, 67, 0.5);
+}
+
+fieldset#non-important-info:after {
+    display: block;
+    clear: both;
+    content: '';
+    zoom: 1;
+}
+
+fieldset div {
+    margin-bottom: 5%;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    display: block;
+    padding: 2%;
+    border: none;
+    margin-top: 5%;
+}
+
+div#input-color {
+    width: 100%;
+}
+
+select {
+    width: 50%;
+}
+
+div.input-number-group input {
+    width: 40%;
+}
+
+#teamwork {
+    color: darkgray;
+}
+
+option {
+    color: black;
+}
+
+#teamwork option:disabled {
+    color: darkgray;
+}
+
+select > option:first-child {
+    color: grey;
+}
+
+#buttons-input {
+    display: inline-block;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 5% 15%;
+    background-color: rgba(211, 157, 67, 0.5);
+    border-radius: 10px;
+
+}
+
+#buttons-input input {
+    color: #373737;
+    background-color: #d39d43;
+    border: 3px solid #373737;
+    width: 200px;
+    height: 40px;
+}
+
+#buttons-input input[type='reset'] {
+    float: left;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    form {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    form {
+        width: 40%;
+        height: auto;
+        padding-left:10%;
+    }
+
+    fieldset#important-info{
+        width:100%;
+        border:none;
+    }
+
+    #buttons-input {
+        margin-right:30%;
+        padding-right:0;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 40%;
+        height: auto;
+    }
+
+    #buttons-input {
+        margin-right:22%;
+        padding-right:0;
+
+    }
+}
+@media screen and (max-width: 640px) {
+    form {
+        width: 30%;
+        height: auto;
+    }
+
+    fieldset#important-info{
+        width:100%;
+        border:none;
+    }
+    #buttons-input {
+        margin-right:25%;
+        padding-right:4%;
+        margin-left:0;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 25%;
+        height: auto;
+        padding-left:1%;
+        padding-right:2%;
+    }
+
+    #buttons-input {
+        margin-right:1%;
+        padding-right:3%;
+        margin-left:1%;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    form {
+        width: 25%;
+        height: auto;
+    }
+    fieldset{
+        width:90%;
+        border:transparent;
+        padding-left:2%;
+        padding-right:0;
+    }
+    label, div#important-fields>p {
+        font-size:0.7em;
+    }
+
+    #buttons-input {
+        width:50%;
+        margin-left:5%;
+        padding-right:1%;
+    }
+
+    #buttons-input>input {
+        width:100%;
+    }
+}
+

@@ -1,4 +1,8 @@
-section>article {
+section#biography {
+    width:80%;
+}
+
+section#biography>article {
     background-color: #373737;
     color:#f7b84f;
     text-align:justify;
@@ -9,6 +13,7 @@ section>article {
     border-radius:10px;
     padding:10px;
     box-sizing: border-box;
+    height:auto;
 }
 
 .trainers {
@@ -17,9 +22,22 @@ section>article {
     float:left;
 }
 
-article:after {
+section#biography article:after {
     display: block;
     content:"";
     zoom:1;
     clear:both;
+}
+
+section#biography article>img {
+    margin-right:10px;
+}
+
+.text-article>p:first-child {
+    text-indent: 1%;
+}
+
+.text-article>p:first-child:first-letter {
+    font-weight:bold;
+    font-size:3em;
 }

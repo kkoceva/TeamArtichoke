@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+img { max-width:100%; }
+
+
 body{
     background-image: url("../images/bg.jpg");
 }
@@ -163,6 +166,7 @@ main>header>h1 {
     margin: 5px 10px 10px 20px;
     padding: 10px;
     box-shadow: 2px 2px 6px;
+
 }
 #welcome>h2{
     display: inline-block;
@@ -174,9 +178,10 @@ main>header>h1 {
     float: left;
 }
 #welcome>p{
+    float: left;
     margin-left: 10px;
-    width: 400px;
-    display: inline-block;
+    width: 70%;
+
 }
 
 div#wrapper>footer {
@@ -215,7 +220,7 @@ div#wrapper>footer {
     width: 400px;
     height: 150px;
     margin: 10px;
-    padding:10px;
+    padding:0 10px 10px 10px;
     float: right;
 
 }
@@ -298,6 +303,8 @@ section>article{
 }
 .inner>figure{
     position: absolute;
+    float: left;
+    height: auto;
 }
 .inner>figure>div{
 
@@ -341,4 +348,18 @@ section>article{
     height: 185px;
     display: inline-block;
     font-style: italic;
+    vertical-align: top;
+}
+@media only screen and (max-width: 960px){
+#wrapper{
+    max-width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+    #wrapper{
+        max-width: 100%;
+    }
+
 }
