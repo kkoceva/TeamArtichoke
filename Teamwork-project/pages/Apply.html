@@ -9,8 +9,9 @@
 <body>
 <div id="wrapper">
     <header>
-        <h1>To code, or to code more...that is the question</h1>
+        <h1>To code, or to code more... that is the question</h1>
         <img src="../images/logo.jpg">
+
         <div class="nav">
             <ul class="menu">
                 <li><a href="../Index.html">Начало</a></li>
@@ -21,11 +22,10 @@
                         <li><a href="FromUniversity.html">От университета</a></li>
                     </ul>
                 </li>
-                <li><a href="HistoryOfProgramming.html">История</a>
+                <li><a href="#">История</a>
                     <ul class="submenu">
-                        <li><a href="#">На програмирането</a></li>
-                        <li><a href="#">На университета</a></li>
-                        <li><a href="#">Последни събития</a></li>
+                        <li><a href="HistoryOfProgramming.html">На програмирането</a></li>
+                        <li><a href="LastEvents.html">Последни събития</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Преподаватели</a>
@@ -67,23 +67,27 @@
                     <div class="input-text-group"><label for="email">* Email:</label>
                         <input type="email" name="email" id="email" required="true" placeholder="primerche@domain.com"/>
                     </div>
-                    <div class="select-group" ><label for="teamwork">* Участие в отборна работа:</label>
+                    <div class="select-group"><label for="teamwork">* Участие в отборна работа:</label>
                         <select name="teamwork" id="teamwork">
-                            <option  value="" selected="selected" disabled="disabled">Вземи решение</option>
+                            <option value="" selected="selected" disabled="disabled">Вземи решение</option>
                             <option value="yes">Да</option>
                             <option value="no">Не</option>
                             <option value="do-not-know">Не знам</option>
                             <option value="maybe">Може би</option>
                             <option value="feel-bad">Лошо ми е</option>
                         </select></div>
-                    <div class="input-number-group"><label for="homework-upload">* Колко домашни мислиш да качиш?</label>
-                        <input type="number" id="homework-upload" name="homework-upload" min="0" max="15" placeholder="from 0 to 15"/></div>
+                    <div class="input-number-group"><label for="homework-upload">* Колко домашни мислиш да
+                        качиш?</label>
+                        <input type="number" id="homework-upload" name="homework-upload" min="0" max="15"
+                               placeholder="from 0 to 15"/></div>
                     <div class="input-number-group"><label for="homework-checked">* Колко домашни мислиш да
                         провериш?</label>
-                        <input type="number" id="homework-checked" name="homework-checked" min="0" max="100" placeholder="from 0 to 100"/></div>
+                        <input type="number" id="homework-checked" name="homework-checked" min="0" max="100"
+                               placeholder="from 0 to 100"/></div>
                     <div class="input-number-group"><label for="computer-hours">* Колко часа не седиш пред
                         компютъра?</label>
-                        <input type="number" name="computer-hours" id="computer-hours" min="0" max="4" placeholder="from 0 to 4"/></div>
+                        <input type="number" name="computer-hours" id="computer-hours" min="0" max="4"
+                               placeholder="from 0 to 4"/></div>
                     <div id="important-fields"><p>* Полетата със зездичка за задължителни</p></div>
                 </fieldset>
 
@@ -130,7 +134,8 @@
                         </select></div>
                 </fieldset>
                 <div id="buttons-input"><input type="reset" value="Изчисти"/><input type="submit" value="Кандидатствай"
-                onclick="alert('Опитай пак!')"/></div>
+                                                                                    onclick="alert('Опитай пак!')"/>
+                </div>
             </form>
         </section>
     </main>

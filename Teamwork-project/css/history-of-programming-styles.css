@@ -1,51 +1,84 @@
+body {
+    font-size: 17px;
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
-h1{
-	text-align: center;
+h1 {
+    text-align: center;
 }
-h2{
-	padding-top: 50px;
-	padding-bottom: 30px;
-	padding-left: 15px;
+
+h2 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
-h3{
-	text-align: center;
+
+h3 {
+    text-align: center;
 }
-h1{
-	font-family: "Comic Sans MS", cursive, sans-serif; 
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.imag{
-	float: left;
-	padding-right: 50px;
-	padding-left: 15px;
+
+.imag {
+    float: left;
+    margin-right: 5%;
+    margin-left: 2%;
 }
+
 .imag:after {
-   content: ""; 
-   display: block; 
-   clear: both; 
-   height: 0; 
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
 }
-#text:after {
-   content: ""; 
-   display: block; 
-   clear: both; 
-   height: 0; 
-}
-#main{
-	background-image: url(../images/papir.gif);
-}
-figure{
-	padding-right: 10px;
-}
-p{
-	font-size: 17px;
-}
-.imgRight{
-	float: right;
-	margin-right: 15px;
-}
-#Div{
- display: inline-block;
-}
-#imgDiv{
 
+.text:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#main {
+    background-image: url(../images/papir.gif);
+}
+
+figure {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+p {
+    font-size: 110%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+hr {
+    padding-top: 0.5%;
+    margin-top: 2%;
+    background-color: black;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+.imgRight {
+    float: right;
+
+}
+
+#classImg:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#text {
+    font-size: 110%;
 }
