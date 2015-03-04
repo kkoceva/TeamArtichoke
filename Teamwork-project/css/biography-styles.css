@@ -1,0 +1,60 @@
+section#biography {
+    width: 100%;
+}
+
+section#biography > article {
+    background-color: #373737;
+    color: #f7b84f;
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border: 1px solid #f7b84f;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+    font-size: 1.5em;
+}
+
+.trainers {
+    width: 200px;
+    height: 240px;
+    float: left;
+}
+
+section#biography article:after {
+    display: block;
+    content: "";
+    zoom: 1;
+    clear: both;
+}
+
+section#biography article > img {
+    margin-right: 10px;
+}
+
+.text-article > p:first-child {
+    text-indent: 1%;
+}
+
+.text-article > p:first-child:first-letter {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+@media screen and (max-width: 640px) {
+    .trainers {
+        width: 80%;
+        height: 80%;
+        padding-left: 8%;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    li.gallery-images > a:active img {
+        width: 50%;
+        height: 30%;
+    }
+}
