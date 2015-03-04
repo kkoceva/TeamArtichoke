@@ -197,7 +197,6 @@ main>header>h1 {
     float: left;
     margin-left: 10px;
     width: 70%;
-
 }
 
 div#wrapper>footer {
@@ -391,6 +390,9 @@ div#wrapper>footer>section>img {
 #wrapper{
     max-width: 100%;
 }
+    .nav ul li a {
+
+    }
 
 }
 

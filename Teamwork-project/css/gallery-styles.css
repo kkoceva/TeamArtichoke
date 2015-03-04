@@ -43,9 +43,10 @@ li.gallery-images > a > img {
 }
 
 li.gallery-images > a:active img {
-    width: 400px;
-    height: 380px;
+    width: 500px;
+    height: 400px;
     position: absolute;
+    left:30%;
 
 }
 
@@ -56,13 +57,14 @@ ul#gallery-main:after {
     zoom: 1;
 }
 
+
 @media only screen and (max-width: 1024px) {
     section#gallery-section {
         width: 80%;
     }
 
     li.gallery-images > a {
-        width: 50%;
+        width:50%;
     }
 
     article#gallery-header > img {
@@ -71,7 +73,7 @@ ul#gallery-main:after {
 
     article#gallery {
 
-        padding-right: 10%;
+        padding-right:10%;
 
     }
 }
@@ -85,18 +87,14 @@ ul#gallery-main:after {
 @media screen and (max-width: 640px) {
     li.gallery-images > a:active img {
         width: 50%;
-        height: 30%;
+        height:30%;
     }
 }
 
 @media screen and (max-width: 480px) {
     li.gallery-images > a:active img {
-        width: 50%;
-        height: 30%;
+        width: 80%;
+        height:30%;
     }
-}
-
-@media screen and (max-width: 320px) {
-
 }
 
