@@ -328,7 +328,7 @@ figure > video {
     padding: 0 0 0 10px;
 }
 
-section.section-news > article {
+section > article {
     width: 100%;
     height: 270px;
     background-color: white;
@@ -411,15 +411,10 @@ section.section-news > article {
     vertical-align: top;
 }
 
-footer > section#footer-left > img {
+footer > section > img {
     width: 180px
 }
 
-footer > section#links-checked > p > a > img {
-    border: 0;
-    width: 88px;
-    height: 31px;
-}
 
 @media only screen and (max-width: 960px) {
     #wrapper {
