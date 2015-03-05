@@ -18,10 +18,16 @@ h2 {
 
 h3 {
     text-align: center;
+    text-decoration:underline;
 }
 
 h1 {
     font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.last-event>img {
+    width:250px;
+    height:250px;
 }
 
 .imag {
@@ -71,6 +77,9 @@ hr {
     float: right;
 
 }
+#classImg>img {
+    width:20%;
+}
 
 #classImg:after {
     content: "";
@@ -81,4 +90,8 @@ hr {
 
 #text {
     font-size: 110%;
+}
+
+.history-fig > img {
+    width: 40%;
 }
